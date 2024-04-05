@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NR-WorkForm</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>  
+
+    <script type="text/javascript">let submitted = false</script>
+
+    <iframe
+    name="hiddenConfirm"
+    id="hiddenConfirm"
+    style="display: none;"
+    onload="if(submitted){window.location='submission.html';}"></iframe>
+
+    <form action="https://docs.google.com/forms/d/e/1FAIpQLSfLLjgH9BFuw-HUV4PubsF5kUotuP6WyppWgJNK-rLJMdsSkQ/formResponse
+    " method="post" target="hiddenConfirm" onsubmit="submitted=true">
+
+        <label for="entry.1962813350">Enter Bill Number</label>
+        <input type="text" name="entry.1962813350" placeholder="0001" required>
+        <label for="entry.1149070565">Date</label>
+        <input type="date" name="entry.1149070565" placeholder="01/01/2024" required>
+        <label for="entry.712632306">Due Date</label>
+        <input type="date" name="entry.712632306" placeholder="10/01/2024" required>
+        <label for="entry.736311025">Other Details</label>
+        <input type="text" name="entry.736311025" placeholder="WorkName, WorkStatus">
+
+        <button type="submit">Submit Form</button>
+        <a href="../index.html" class="btn">Home</a>
+
+    </form>
+
+
+</body>
+
+</html>

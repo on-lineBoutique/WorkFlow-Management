@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NCH-WorkForm</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <script type="text/javascript">let submitted = false</script>
+
+    <iframe
+    name="hiddenConfirm"
+    id="hiddenConfirm"
+    style="display: none;"
+    onload="if(submitted){window.location='submission.html';}"></iframe>
+
+    <form action="https://docs.google.com/forms/d/e/1FAIpQLScb70HUESbi4msTz--lGAesF78Y2aq8OhcDE3_bd4QSyCNtlg/formResponse
+    " method="post" target="hiddenConfirm" onsubmit="submitted=true">
+
+        <label for="entry.1679099486">Enter Bill Number</label>
+        <input type="text" name="entry.1679099486" placeholder="0001" required>
+        <label for="entry.341002154">Date</label>
+        <input type="date" name="entry.341002154" placeholder="01/01/2024" required>
+        <label for="entry.1005405235">Due Date</label>
+        <input type="date" name="entry.1005405235" placeholder="10/01/2024" required>
+        <label for="entry.1914278670">Other Details</label>
+        <input type="text" name="entry.1914278670" placeholder="WorkName, WorkStatus">
+
+        <button type="submit">Submit Form</button>
+        <a href="../index.html" class="btn">Home</a>
+
+
+    </form>
+
+
+</body>
+
+</html>
